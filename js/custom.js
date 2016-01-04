@@ -1,7 +1,14 @@
 $(document).ready(function () {
-  $('[data-toggle="offcanvas"]').click(function () {
-    $('.row-offcanvas').toggleClass('active')
-  });
+  $(".list-group").height($(".mainContent").height() + 24);
+});
 
-  $(".list-group").height($(".mainContent").height());
+function toggleNav() {
+	$('.row-offcanvas').toggleClass('active')
+	$('.mobileMenu').toggleClass('activeMenu')
+}
+
+$( window ).resize(function() {
+  
+  $(".list-group").height($(".mainContent").height() + 24);
+     
 });

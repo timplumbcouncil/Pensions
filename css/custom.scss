@@ -1,26 +1,18 @@
-/*
- * Style tweaks
- * --------------------------------------------------
- */
-html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
+html, body {
+  overflow-x: hidden; 
 }
 
-footer {
-  padding: 30px 0;
-}
+footer {  padding: 30px 0; }
 
-.logoLink { background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
+.sidebar-offcanvas {margin-top: 24px}
 
-.hiddenText {
-  display: none; }
+.logoLink {background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
+.hiddenText {display: none; }
 
-.headerBG {
-  background: url(../images/header_bg.png); }
+.headerBG { background: url(../images/header_bg.png) repeat-x #bec7e8;border-bottom: 12px #10186b solid; }
 
  .utilityNav {
-    width:227px; height:33px; background: #008c39; color:#ffffff; padding: 5px 0 0 10px; float: right;
+    width:176px; height:33px; background: #008c39; color:#ffffff; padding: 5px 0 0 10px; float: left;
     ul {display: inline; margin:0; padding: 0}
     li {display: inline; margin:0; padding: 0}
     a {color:#ffffff; text-decoration: underline}
@@ -29,7 +21,7 @@ footer {
     .large {font-size:1.1em}
 } 
 
-.mainContent {margin-top:24px}
+.mainContent {margin:24px 0}
 
 .councilLogo {background: url(../images/council.png); height: 104px; width: 217px; display: block; margin-top: 10px }
 
@@ -37,16 +29,16 @@ footer {
   position: relative;
   height: 500px; }
 
-  .list-group {
-    background-color: #10186b; border-radius: none !important;
-    li {list-style: none}
-    ul {margin:0; padding: 0;}
+.list-group {
+  background-color: #10186b; border-radius: none !important;
+  li {list-style: none}
+  ul {margin:0; padding: 0;}
+}
 
-  }
-  .list-group-item {background-color: transparent !important; border: none}
-  .list-group-item:first-child {border-radius: 0}
-  .list-group-item:hover {background-color: #008c39 !important}
-  a.list-group-item {color: #ffffff}
+.list-group-item {background-color: transparent !important; border: none}
+.list-group-item:first-child {border-radius: 0}
+.list-group-item:hover {background-color: #008c39 !important}
+a.list-group-item {color: #ffffff}
 
 .logoText {
     float:left; color:#10186b; margin: 40px 0 0 30px;
@@ -54,58 +46,67 @@ footer {
    .logoLineC {float: right}
 }
 
-.policeBox {background: url(../images/police_bg.jpg) no-repeat; width: 100%; height: auto; float: left; margin-top: 24px}
+.policeBox {background: url(../images/police_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
 .policeBox_label {background-color: #10186b; }
 
-.firemanBox {background: url(../images/fireman_bg.jpg) no-repeat; width: 100%; height: auto; float: left; margin-top: 24px}
+.firemanBox {background: url(../images/fireman_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
 .firemanBox_label {background-color: #6b1410; }
 
-.teacherBox {background: url(../images/teacher_bg.jpg) no-repeat; width: 100%; height: auto; float: left; margin-top: 24px}
+.teacherBox {background: url(../images/teacher_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
 .teacherBox_label {background-color: #008c39; }
 
-.service_label {width: 100%; margin: 100px 0 20px 0;padding: 5px; float: left; text-align: right; font-size: 18px;}
+.service_label {width: 100%; margin: 100px 0 20px 0;padding: 5px; float: left; text-align: right; font-size: 14px;}
 a.service_label {color: #ffffff}
 
- /*==========  Non-Mobile First Method  ==========*/
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (max-width : 1200px) {
-
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (max-width : 992px) {
-
-      .logoText {
-    float:left; color:#10186b; margin: 40px 0 0 30px;
-   .logoLineB {font-size:26px;line-height: 40px; font-weight: bold}
-   .logoLineC {float: right}
+.servicesA-Z { width: 100%; background-color: #333399; color: #ffffff; padding: 8px; height: auto; float: left; text-align: center;
+  ul { margin: 0; padding: 0;}
+  li { display: inline; padding: 0 4px 0 3px; margin: 0; }
+  a { color: #ffffff; text-decoration: underline; }
 }
 
-    }
+.row-offcanvas-right .sidebar-offcanvas {margin-top:0}
 
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
+.mobileMenu {background: url(../images/mobile_menu.gif) no-repeat ; height: 33px; width: 33px; display: block; float: right}
+.activeMenu {background: url(../images/mobile_menu_close.gif) !important}
 
-      .logoText {
-    float:left; color:#10186b; margin: 40px 0 0 30px;
-   .logoLineB {font-size:26px;line-height: 40px; font-weight: bold}
-   .logoLineC {float: right}
-   .logoLink { background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
+.footerBG {background-color:#bec7e8; border-top: 12px #10186b solid; margin: 24px 0 0 0}
+.footerAddress {padding: 12px; width: 100%; text-align: center}
+
+.latestNews {
+ul {margin:0 0 0 4px; padding:0}
+li {list-style: none; border-top: dashed 1px #999999; padding: 4px 0}
+
 }
 
+.highlightBlue {
+  background: url(../images/secureBG.jpg) no-repeat  left #1d297f;padding: 0 12px 12px 12px; 
+  h2 {font-size: 22px; color: #ffffff; padding-top: 12px; margin-bottom:110px}
+  a { color: #ffffff; font-size: 22px;}
+
+ }
+@media only screen and (min-width : 768px) {
+
+  .utilityNav  {width:227px; float: right}
+  .service_label {font-size: 18px;}
+  .logoText {
+      float:left; color:#10186b; margin: 40px 0 0 30px;
+      .logoLineB {font-size:26px;line-height: 40px; font-weight: bold}
+      .logoLineC {float: right}
+      .logoLink { background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
     }
 
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (max-width : 480px) {
-      .logoLink { background: url(../images/pensions_logo.png) no-repeat center; width: 100%; height: 157px; display: block; float: left;}
 
-    }
+}
 
-    /* Custom, iPhone Retina */ 
-    @media only screen and (max-width : 320px) {
-        
+@media only screen and (min-width : 992px) {
+
+    .logoText {
+      float:left; color:#10186b; margin: 40px 0 0 30px;
+     .logoLineB {font-size:35px;line-height: 40px; font-weight: bold}
+     .logoLineC {float: right}
     }
+  
+}
 
 
 
