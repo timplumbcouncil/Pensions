@@ -1,18 +1,22 @@
+$darkBlue:#10186b;
+$purple: #4e4e95;
+$green: #00662a;
+
 html, body {
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
-footer {  padding: 30px 0; }
+
 
 .sidebar-offcanvas {margin-top: 24px}
 
-.logoLink {background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
+.logoLink {background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; margin:0 auto}
 .hiddenText {display: none; }
 
-.headerBG { background: url(../images/header_bg.png) repeat-x #bec7e8;border-bottom: 12px #10186b solid; }
+.headerBG { background: url(../images/header_bg.png) repeat-x #bec7e8;border-bottom: 12px $darkBlue solid; }
 
  .utilityNav {
-    width:176px; height:33px; background: #008c39; color:#ffffff; padding: 5px 0 0 10px; float: left;
+    width:176px; height:33px; background:$darkBlue ; color:#ffffff; padding: 5px 0 0 10px; float: left;
     ul {display: inline; margin:0; padding: 0}
     li {display: inline; margin:0; padding: 0}
     a {color:#ffffff; text-decoration: underline}
@@ -21,7 +25,8 @@ footer {  padding: 30px 0; }
     .large {font-size:1.1em}
 } 
 
-.mainContent {margin:24px 0}
+.mainContent {margin:24px 0; height: auto}
+.mainContent h1 {margin-top:0}
 
 .councilLogo {background: url(../images/council.png); height: 104px; width: 217px; display: block; margin-top: 10px }
 
@@ -30,70 +35,114 @@ footer {  padding: 30px 0; }
   height: 500px; }
 
 .list-group {
-  background-color: #10186b; border-radius: none !important;
-  li {list-style: none}
+  background-color: $darkBlue; border-radius: none !important;
+  li {list-style: none;  border-bottom: solid 1px #2a327c}
+  li:last-child {border-bottom: none}
   ul {margin:0; padding: 0;}
+  ul li li{margin:0; padding: 0; background-color: #2a327c; border-bottom: solid 1px $darkBlue}
+  ul li li:last-child {border-bottom: none}
+  ul li li a {padding-left:30px}
+  a.list-group-item.active {background:$purple !important}
+
 }
 
-.list-group-item {background-color: transparent !important; border: none}
+.list-group-item {background-color: transparent !important; border: none; color:#ffffff}
 .list-group-item:first-child {border-radius: 0}
-.list-group-item:hover {background-color: #008c39 !important}
-a.list-group-item {color: #ffffff}
+.list-group-item:hover {background-color: $green !important; color:#ffffff}
+a.list-group-item, a.list-group-item:hover {color: #ffffff !important}
+
 
 .logoText {
-    float:left; color:#10186b; margin: 40px 0 0 30px;
-   .logoLineB {font-size:37px;line-height: 40px; font-weight: bold}
+    float:left; color:$darkBlue; margin: 40px 0 0 30px;
+   .logoLineB {font-size:1.6em;line-height: 40px; font-weight: bold}
    .logoLineC {float: right}
 }
 
 .policeBox {background: url(../images/police_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
-.policeBox_label {background-color: #10186b; }
+.policeBox_label {background-color: $darkBlue; }
 
 .firemanBox {background: url(../images/fireman_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
 .firemanBox_label {background-color: #6b1410; }
 
 .teacherBox {background: url(../images/teacher_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
-.teacherBox_label {background-color: #008c39; }
+.teacherBox_label {background-color: $green; }
 
-.service_label {width: 100%; margin: 100px 0 20px 0;padding: 5px; float: left; text-align: right; font-size: 14px;}
+a.policeBox, a.firemanBox,a.teacherBox {color:#ffffff}
+a.policeBox:hover, a.firemanBox:hover, a.teacherBox:hover {color:#aaaaaa}
+
+.service_label {width: 100%; margin: 100px 0 20px 0;padding: 5px; float: left; text-align: right; font-size: 1em;}
 a.service_label {color: #ffffff}
 
-.servicesA-Z { width: 100%; background-color: #333399; color: #ffffff; padding: 8px; height: auto; float: left; text-align: center;
+.servicesA-Z { width: 100%; background-color: $purple; color: #ffffff; padding: 8px; height: auto; float: left; text-align: center;
   ul { margin: 0; padding: 0;}
   li { display: inline; padding: 0 4px 0 3px; margin: 0; }
   a { color: #ffffff; text-decoration: underline; }
 }
+
+.smallCaption {display:none}
 
 .row-offcanvas-right .sidebar-offcanvas {margin-top:0}
 
 .mobileMenu {background: url(../images/mobile_menu.gif) no-repeat ; height: 33px; width: 33px; display: block; float: right}
 .activeMenu {background: url(../images/mobile_menu_close.gif) !important}
 
-.footerBG {background-color:#bec7e8; border-top: 12px #10186b solid; margin: 24px 0 0 0}
-.footerAddress {padding: 12px; width: 100%; text-align: center}
+.footerBG {background-color:#bec7e8; border-top: 12px $darkBlue solid; margin: 24px 0 0 0}
+.footerAddress {padding: 12px; width: 100%; text-align: center;
+  a {color:#1f1f1f}
+}
+
+
 
 .latestNews {
-ul {margin:0 0 0 4px; padding:0}
-li {list-style: none; border-top: dashed 1px #999999; padding: 4px 0}
+  a {width:100%; display: block}
+  ul {margin:0 0 0 4px; padding:0}
+  li {list-style: none; border-top: dashed 1px #999999; padding: 4px 0}
 
 }
 
 .highlightBlue {
-  background: url(../images/secureBG.jpg) no-repeat  left #1d297f;padding: 0 12px 12px 12px; 
-  h2 {font-size: 22px; color: #ffffff; padding-top: 12px; margin-bottom:110px}
-  a { color: #ffffff; font-size: 22px;}
+  background: url(../images/secureBG.jpg) no-repeat left #1d297f;padding: 0 12px 12px 12px; 
+  h2 {font-size: 1.4em; color: #ffffff; padding-top: 12px; margin-bottom:110px}
+  a { color: #ffffff; font-size: 1.4em; text-decoration: none}
+  a:hover {color:#aaaaaa}
 
  }
+
+ .breadCrumbs {margin: 0 0 24px 0}
+
+/* Carousel */
+.slider_container{position:relative;float:left;width:100%}
+.slider_nav{position:absolute;-webkit-tap-highlight-color:rgba(0,0,0,0);top:52%;left:0;opacity:0.7;z-index:3;text-indent:-9999px;overflow:hidden;text-decoration:none;height:61px;width:38px;background:transparent url(../images/themes.gif) no-repeat left top;margin-top:-45px}
+.slider {
+  position:relative;list-style:none;overflow:hidden;width:100%;padding:0;margin:0;
+  li{position:absolute;width:100%;left:0;top:0}
+  .caption{display:block;position:absolute;z-index:2;font-size:0.9em;text-shadow:none;color:#dbe0f2;background:#000;background:rgba(0,0,0, .8);left:0;right:0;bottom:0;padding:10px;margin:0;max-width:none;}
+}
+
+.slider_nav.next{left:auto;background-position:right top;right:0}
+.rslides{
+  position:relative;list-style:none;overflow:hidden;width:100%;padding:0;margin:0;
+  li{-webkit-backface-visibility:hidden;position:absolute;display:none;width:100%;left:0;top:0}
+  li:first-child{position:relative;display:block;float:left}
+  img{display:block;height:auto;float:left;width:100%;border:0}
+}
+
+
 @media only screen and (min-width : 768px) {
 
-  .utilityNav  {width:227px; float: right}
-  .service_label {font-size: 18px;}
+  .slider .caption {font-size:1.5em;padding:10px 20px}
+
+  .smallCaption {display:block; color:#bec7e8}
+
+  .utilityNav  {width:227px; float: right; background-color: $green}
+  .service_label {font-size: 1.4em;}
   .logoText {
-      float:left; color:#10186b; margin: 40px 0 0 30px;
-      .logoLineB {font-size:26px;line-height: 40px; font-weight: bold}
+      float:left; color:$darkBlue; margin: 40px 0 0 30px;
+      .logoLineB {font-size:1.4em;line-height: 40px; font-weight: bold}
       .logoLineC {float: right}
-      .logoLink { background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
+      
     }
+    .logoLink { background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
 
 
 }
@@ -101,8 +150,8 @@ li {list-style: none; border-top: dashed 1px #999999; padding: 4px 0}
 @media only screen and (min-width : 992px) {
 
     .logoText {
-      float:left; color:#10186b; margin: 40px 0 0 30px;
-     .logoLineB {font-size:35px;line-height: 40px; font-weight: bold}
+      float:left; color:$darkBlue; margin: 40px 0 0 30px;
+     .logoLineB {font-size:2.2em;line-height: 40px; font-weight: bold}
      .logoLineC {float: right}
     }
   
