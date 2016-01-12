@@ -1,11 +1,43 @@
 html, body {
   overflow-x: hidden; }
 
+.landing_logo {
+  margin: 0 auto;
+  width: 150px; }
+
+.bottom-border {
+  margin: 0 auto; }
+
+.enterButtons {
+  text-align: center;
+  margin: 40px 0; }
+  .enterButtons .btn {
+    width: 110px; }
+
+.introText {
+  margin-top: 20px; }
+
+.landingLogo {
+  width: 218px;
+  margin: 0 auto; }
+
+.ddewis {
+  background: url(/Pensions/images/ddewis.gif) center top no-repeat;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  height: 100px; }
+
+.stripColour {
+  background: #cfd2e6;
+  border-top: 8px solid #10186b;
+  border-bottom: 8px solid #10186b; }
+
 .sidebar-offcanvas {
   margin-top: 24px; }
 
 .logoLink {
-  background: url(../images/pensions_logo.png) no-repeat;
+  background: url(/Pensions/images/pensions_logo.png) no-repeat;
   width: 148px;
   height: 157px;
   display: block;
@@ -15,7 +47,7 @@ html, body {
   display: none; }
 
 .headerBG {
-  background: url(../images/header_bg.png) repeat-x #bec7e8;
+  background: url(/Pensions/images/header_bg.png) repeat-x #bec7e8;
   border-bottom: 12px #10186b solid; }
 
 .utilityNav {
@@ -51,7 +83,7 @@ html, body {
   margin-top: 0; }
 
 .councilLogo {
-  background: url(../images/council.png);
+  background: url(/Pensions/images/council.png);
   height: 104px;
   width: 217px;
   display: block;
@@ -111,7 +143,7 @@ a.list-group-item, a.list-group-item:hover {
     float: right; }
 
 .policeBox {
-  background: url(../images/police_bg.jpg) no-repeat center top;
+  background: url(/Pensions/images/police_bg.jpg) no-repeat center top;
   width: 100%;
   height: auto;
   float: left;
@@ -121,7 +153,7 @@ a.list-group-item, a.list-group-item:hover {
   background-color: #10186b; }
 
 .firemanBox {
-  background: url(../images/fireman_bg.jpg) no-repeat center top;
+  background: url(/Pensions/images/fireman_bg.jpg) no-repeat center top;
   width: 100%;
   height: auto;
   float: left;
@@ -131,7 +163,7 @@ a.list-group-item, a.list-group-item:hover {
   background-color: #6b1410; }
 
 .teacherBox {
-  background: url(../images/teacher_bg.jpg) no-repeat center top;
+  background: url(/Pensions/images/teacher_bg.jpg) no-repeat center top;
   width: 100%;
   height: auto;
   float: left;
@@ -183,14 +215,14 @@ a.service_label {
   margin-top: 0; }
 
 .mobileMenu {
-  background: url(../images/mobile_menu.gif) no-repeat;
+  background: url(/Pensions/images/mobile_menu.gif) no-repeat;
   height: 33px;
   width: 33px;
   display: block;
   float: right; }
 
 .activeMenu {
-  background: url(../images/mobile_menu_close.gif) !important; }
+  background: url(/Pensions/images/mobile_menu_close.gif) !important; }
 
 .footerBG {
   background-color: #bec7e8;
@@ -216,7 +248,7 @@ a.service_label {
   padding: 4px 0; }
 
 .highlightBlue {
-  background: url(../images/secureBG.jpg) no-repeat left #1d297f;
+  background: url(/Pensions/images/secureBG.jpg) no-repeat left #1d297f;
   padding: 0 12px 12px 12px; }
   .highlightBlue h2 {
     font-size: 1.4em;
@@ -329,6 +361,13 @@ a.service_label {
   .service_label {
     font-size: 1.4em; }
 
+  .logoLink {
+    background: url(/Pensions/images/pensions_logo.png) no-repeat;
+    width: 148px;
+    height: 157px;
+    display: block;
+    float: left; }
+
   .logoText {
     float: left;
     color: #10186b;
@@ -338,14 +377,7 @@ a.service_label {
       line-height: 40px;
       font-weight: bold; }
     .logoText .logoLineC {
-      float: right; }
-
-  .logoLink {
-    background: url(../images/pensions_logo.png) no-repeat;
-    width: 148px;
-    height: 157px;
-    display: block;
-    float: left; } }
+      float: right; } }
 @media only screen and (min-width: 992px) {
   .logoText {
     float: left;

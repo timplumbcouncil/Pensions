@@ -1,21 +1,30 @@
 $darkBlue:#10186b;
 $purple: #4e4e95;
 $green: #00662a;
+$imgpath:'/Pensions/images';
 
-html, body {
-  overflow-x: hidden;
+
+html, body {overflow-x: hidden}
+
+.landing_logo {margin:0 auto; width: 150px}
+.bottom-border { margin: 0 auto}
+.enterButtons {
+  text-align: center; margin: 40px 0;
+  .btn {width:110px}
 }
-
-
+.introText {margin-top:20px}
+.landingLogo {width: 218px; margin: 0 auto}
+.ddewis {background: url(#{$imgpath}/ddewis.gif) center top no-repeat ; display:block; width: 100%; padding-top:20px; height:100px; }
+.stripColour {background: #cfd2e6; border-top: 8px solid $darkBlue; border-bottom: 8px solid $darkBlue; }
 
 .sidebar-offcanvas {margin-top: 24px}
 
-.logoLink {background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; margin:0 auto}
+.logoLink {background: url(#{$imgpath}/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; margin:0 auto}
 .hiddenText {display: none; }
 
-.headerBG { background: url(../images/header_bg.png) repeat-x #bec7e8;border-bottom: 12px $darkBlue solid; }
+.headerBG { background: url(#{$imgpath}/header_bg.png) repeat-x #bec7e8;border-bottom: 12px $darkBlue solid; }
 
- .utilityNav {
+.utilityNav {
     width:176px; height:33px; background:$darkBlue ; color:#ffffff; padding: 5px 0 0 10px; float: left;
     ul {display: inline; margin:0; padding: 0}
     li {display: inline; margin:0; padding: 0}
@@ -27,12 +36,9 @@ html, body {
 
 .mainContent {margin:24px 0; height: auto}
 .mainContent h1 {margin-top:0}
+.councilLogo {background: url(#{$imgpath}/council.png); height: 104px; width: 217px; display: block; margin-top: 10px }
 
-.councilLogo {background: url(../images/council.png); height: 104px; width: 217px; display: block; margin-top: 10px }
-
-.relativeP {
-  position: relative;
-  height: 500px; }
+.relativeP {position: relative; height: 500px }
 
 .list-group {
   background-color: $darkBlue; border-radius: none !important;
@@ -43,7 +49,6 @@ html, body {
   ul li li:last-child {border-bottom: none}
   ul li li a {padding-left:30px}
   a.list-group-item.active {background:$purple !important}
-
 }
 
 .list-group-item {background-color: transparent !important; border: none; color:#ffffff}
@@ -58,13 +63,13 @@ a.list-group-item, a.list-group-item:hover {color: #ffffff !important}
    .logoLineC {float: right}
 }
 
-.policeBox {background: url(../images/police_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
+.policeBox {background: url(#{$imgpath}/police_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
 .policeBox_label {background-color: $darkBlue; }
 
-.firemanBox {background: url(../images/fireman_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
+.firemanBox {background: url(#{$imgpath}/fireman_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
 .firemanBox_label {background-color: #6b1410; }
 
-.teacherBox {background: url(../images/teacher_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
+.teacherBox {background: url(#{$imgpath}/teacher_bg.jpg) no-repeat center top; width: 100%; height: auto; float: left; margin-top: 24px}
 .teacherBox_label {background-color: $green; }
 
 a.policeBox, a.firemanBox,a.teacherBox {color:#ffffff}
@@ -83,29 +88,25 @@ a.service_label {color: #ffffff}
 
 .row-offcanvas-right .sidebar-offcanvas {margin-top:0}
 
-.mobileMenu {background: url(../images/mobile_menu.gif) no-repeat ; height: 33px; width: 33px; display: block; float: right}
-.activeMenu {background: url(../images/mobile_menu_close.gif) !important}
+.mobileMenu {background: url(#{$imgpath}/mobile_menu.gif) no-repeat ; height: 33px; width: 33px; display: block; float: right}
+.activeMenu {background: url(#{$imgpath}/mobile_menu_close.gif) !important}
 
 .footerBG {background-color:#bec7e8; border-top: 12px $darkBlue solid; margin: 24px 0 0 0}
 .footerAddress {padding: 12px; width: 100%; text-align: center;
   a {color:#1f1f1f}
 }
 
-
-
 .latestNews {
   a {width:100%; display: block}
   ul {margin:0 0 0 4px; padding:0}
   li {list-style: none; border-top: dashed 1px #999999; padding: 4px 0}
-
 }
 
 .highlightBlue {
-  background: url(../images/secureBG.jpg) no-repeat left #1d297f;padding: 0 12px 12px 12px; 
+  background: url(#{$imgpath}/secureBG.jpg) no-repeat left #1d297f;padding: 0 12px 12px 12px; 
   h2 {font-size: 1.4em; color: #ffffff; padding-top: 12px; margin-bottom:110px}
   a { color: #ffffff; font-size: 1.4em; text-decoration: none}
   a:hover {color:#aaaaaa}
-
  }
 
  .breadCrumbs {margin: 0 0 24px 0}
@@ -131,20 +132,16 @@ a.service_label {color: #ffffff}
 @media only screen and (min-width : 768px) {
 
   .slider .caption {font-size:1.5em;padding:10px 20px}
-
   .smallCaption {display:block; color:#bec7e8}
-
   .utilityNav  {width:227px; float: right; background-color: $green}
   .service_label {font-size: 1.4em;}
+  .logoLink { background: url(#{$imgpath}/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
+
   .logoText {
       float:left; color:$darkBlue; margin: 40px 0 0 30px;
       .logoLineB {font-size:1.4em;line-height: 40px; font-weight: bold}
       .logoLineC {float: right}
-      
     }
-    .logoLink { background: url(../images/pensions_logo.png) no-repeat; width: 148px; height: 157px; display: block; float: left;}
-
-
 }
 
 @media only screen and (min-width : 992px) {
@@ -156,8 +153,6 @@ a.service_label {color: #ffffff}
     }
   
 }
-
-
 
 @media screen and (max-width: 767px) {
   .row-offcanvas {
